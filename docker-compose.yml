@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: test-ts
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: lordgafare
+      POSTGRES_PASSWORD: gun
+      POSTGRES_DB: test-ts
